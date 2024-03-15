@@ -1,0 +1,84 @@
+[
+    {
+      "id": "1",
+      "name": "Arkham Knight PS4",
+      "price": "89.99",
+      "image": "/images/arkham_knight.jpg",
+      "ratings": 4,
+      "category":"Videogame"
+    },
+    {
+      "id": "2",
+      "name": "God of War PS$",
+      "price": "89.99",
+      "image": "/images/god_of_war.jpg",
+      "ratings": 5,
+      "category": "Videogame"
+    },
+    {
+      "id": "3",
+      "name": "Fashion Boutique PS4",
+      "price": "89.99",
+      "image": "/images/fashion_boutique.jpg",
+      "ratings": 2,
+      "category":"Videogame"
+    },
+    {
+        "id": "4",
+        "name": "Mario Kart 8 Switch",
+        "price": "89.99",
+        "image": "/images/mario_kart_8.jpg",
+        "ratings": 4,
+        "category": "Videogame"
+    },
+    {
+        "id": "5",
+        "name": "Modern Warfare II PS4",
+        "price": "89.99",
+        "image": "/images/modern_warfare_2.jpg",
+        "ratings": 5,
+        "category":"Videogame"
+    },
+    {
+        "id": "6",
+        "name": "Red Dead Redemption 2 PS4",
+        "price": "89.99",
+        "image": "/images/red_dead_redemption_2.jpg",
+        "ratings": 5,
+        "category":"Videogame"
+      },
+    {
+        "id": "7",
+        "name": "Resident Evil 4 PS4",
+        "price": "89.99",
+        "image": "/images/Resident_evil_4.jpg",
+        "ratings": 5,
+        "category":"Videogame"
+      },
+    {
+        "id": "8",
+        "name": "PS4",
+        "price": "399.99",
+        "image": "/images/PS4.jpg",
+        "ratings": 5,
+        "category":"Console"
+      },
+    {
+        "id": "9",
+        "name": "PS5",
+        "price": "399.99",
+        "image": "/images/PS5.jpg",
+        "ratings": 5,
+        "category":"Console"
+      },
+    {
+        "id": "10",
+        "name": "Nintendo Switch",
+        "price": "399.99",
+        "image": "/images/Switch.jpg",
+        "ratings": 5,
+        "category":"Console"
+      }
+    
+  ]
+  

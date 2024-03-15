@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+
+/* Ensure the container of your products uses grid layout */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* This will create a responsive grid with each item having at least 200px width */
+  gap: 1rem; /* Spacing between items */
+  padding: 1rem; /* Padding around the grid */
+}
+
+/* Style each product card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Image styles */
+.product-image {
+  width: 100%; /* makes image responsive */
+  object-fit: cover; /* ensures image covers the area nicely */
+  border-radius: 0.25rem; /* optional: rounds the corners of the images */
+  height: 300px; /* fixed height, or you could use max-height */
+}
+
+/* Ensures that the title does not overflow */
+.product-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.5rem;
+  font-size: medium;
+}
+
+/* Price and rating */
+.product-price, .product-rating {
+  margin-top: 0.25rem;
+}
+
+/* Styles for the add to cart button */
+.add-to-cart-btn {
+  margin-top: auto; /* pushes button to the bottom */
+  margin-inline: center;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: block;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+.remove-from-cart-btn {
+  margin-top: auto; /* pushes button to the bottom */
+  margin-inline: center;
+  padding: 0.5rem 1rem;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: block;
+}
+
+.remove-from-cart-btn:hover {
+  background-color: #911414;
+}
+
+/* Styles for the product rating */
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+/* Optionally, hide the default radio button style for the rating and replace with stars */
+.rating-star {
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Layout adjustments on hover of the product card */
+.product-card:hover {
+  transform: translateY(-5px); /* optional: creates a small lift effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* adjust the minimum width for smaller screens */
+  }
+
+  .product-image {
+    height: 200px; /* smaller images on smaller screens */
+  }
+}
+
+/* Ensures text does not overflow its container */
+.product-name, .product-price, .navbar-text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%; /* Adjust as necessary */
+}
+
+/* Adjust the cart icon and number color */
+.navbar .badge, .navbar .MdOutlineShoppingCart {
+  background-color: #007bff; /* Adjust this blue to match your theme */
+  color: white;
+}
+
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-col {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+}
+
+.quantity-modifier {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+}
+
+/* Adjust the spacing around your buttons and quantity text as needed */
+.quantity-modifier button,
+.quantity-modifier span {
+  margin: 0 5px;
+}
+
+.header-dropdown-menu { 
+  max-width: 100vw;  
+  overflow-x: auto;
+  max-height: 500px; /* Adjust to fit as much content as you'd like before scrolling */
+  overflow-y: auto; 
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-item-text {
+  flex-grow: 1; /* Allow the text to take up as much space as possible */
+  margin-right: 10px; /* Add some space before the icons */
+}
+
+.dropdown-item-icons {
+  display: flex;
+  gap: 10px; /* Adjust the space between the icons */
+}
+
+
+.cart-icon {
+  margin-right: 160px; /* Increase the right margin to move it to the left */
+}
